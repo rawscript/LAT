@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Lens Audio Transcription",
+  "version": "1.0",
+  "description": "An extension for transcribing audio to text in your browser.",
+  "icons": {
+    "48": "./contents/icon_48.png",
+    "128": "./contents/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "./contents/icon.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "audioCapture"
+  ],
+  "background": {
+    "scripts": ["options.js", "lib/FileSaver.js", "background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "start_transcription": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Start Transcription"
+    }
+  }
+}

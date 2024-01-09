@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcription Extension Options</title>
+  <link rel="stylesheet" href="options.css"> </head>
+<body>
+  <h1>LAT Options</h1>
+
+  <label for="language-select">Transcription Language:</label>
+  <select id="language-select">
+    <option value="en-US">English (US)</option>
+    <option value="es-ES">Spanish (Spain)</option>
+    </select>
+
+  <label for="shortcut-input">Transcription Shortcut:</label>
+  <input type="text" id="shortcut-input" placeholder="Ctrl+Shift+K">
+  <label for="fileName">Enter File Name:</label>
+    <input type="text" id="fileName" placeholder="transcription.txt">
+
+  <label for="playback-speed">Playback Speed:</label>
+  <input type="range" min="0.5" max="2" step="0.1" value="1" id="playback-speed">
+
+  <button id="save-options">Save Options</button>
+
+  <script src="options.js"></script> </body>
+</html>
